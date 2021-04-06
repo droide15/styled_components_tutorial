@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-const color = '#f15025';
 const padding = 'padding: 1rem';
 const margin = 'margin: 1rem';
 const border = (width = '3px') => {
@@ -21,6 +20,9 @@ export const Button = styled(CommonButton)`
 
 export const SecondButton = styled(CommonButton)`
     ${border()};
-    color: ${color};
-    background: var(--primaryColor);
+    background: ${(props) => props.theme.invertedColor};
+    color: ${(props) => props.theme.secondaryColor};
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
 `;

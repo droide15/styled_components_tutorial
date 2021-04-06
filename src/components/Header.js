@@ -11,17 +11,22 @@ export const Header = ({title}) => {
 }
 
 const StyledWrapper = styled.section`
-    background: red;
-    transition: all 2s ease-in-out;
+    background: ${(props) => props.theme.primaryColor};
+    transition: all 0.2s ease-in-out;
     h1 {
-        color: blue;
+        color: ${(props) => props.theme.secondaryColor};
+        padding: 0.5rem;
     }
     .subtitle {
-        color: green;
+        color: ${(props) => props.theme.secondaryColor};
+        filter: brightness(25%);
+        padding: 0.5rem;
     }
     &:hover {
-        background: black;
+        background: ${(props) => props.theme.invertedColor};
     }
+    padding: 0.5rem;
+    text-transform: capitalize;
 `;
 
 export default Header;
