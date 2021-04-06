@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {SecondButton} from '../elements/Buttons';
+import {SecondButton} from 'elements/Buttons';
 
 export const DishButton = styled(SecondButton)`
     background: green;

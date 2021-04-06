@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import './App.css';
-import img1 from './images/image-1.jpg';
-import img2 from './images/image-2.jpg';
+import img1 from 'images/image-1.jpg';
+import img2 from 'images/image-2.jpg';
 
-import Header from './components/Header';
-import {Button, SecondButton} from './elements/Buttons';
-import {DishButton} from './components/Dish';
+import Header from 'components/Header';
+import {Button, SecondButton} from 'elements/Buttons';
+import {DishButton} from 'components/Dish';
 import {createGlobalStyle} from 'styled-components';
-import Hero from './components/Hero';
-import Banner from './components/Banner';
-import {BasicInput} from './elements/Inputs';
-import {RedBox, GreenBox} from './elements/Boxes';
+import Hero from 'components/Hero';
+import Banner from 'components/Banner';
+import {BasicInput} from 'elements/Inputs';
+import {RedBox, GreenBox} from 'elements/Boxes';
 import {ThemeProvider} from 'styled-components';
-import {redTheme, blueTheme, greenTheme} from './components/Themes';
-import Navbar from './components/Navbar';
-import Content from './components/Content';
+import {redTheme, blueTheme, greenTheme} from 'components/Themes';
+import Navbar from 'components/Navbar';
+import Content from 'components/Content';
 
 const themes = [
   redTheme,
