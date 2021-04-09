@@ -25,4 +25,5 @@ export const SecondButton = styled(CommonButton)`
     margin: 0.5rem;
     padding: 0.5rem;
     font-weight: bold;
+    border-radius: 10px;
 `;
